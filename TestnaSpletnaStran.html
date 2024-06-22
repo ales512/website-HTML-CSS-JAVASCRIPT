@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IdejaApp</title>
+
+<script>
+
+       
+   
+    function openNav() {
+      document.getElementById("meni").style.display = "block";
+    
+    
+    }
+    
+    function closeNav() {
+      document.getElementById("meni").style.display = "none";
+      
+    }
+    
+   function prikaziInfo() {
+      var x = document.getElementById("info");
+    if (x.style.display === "none") {
+    x.style.display = "block";
+    } else {
+    x.style.display = "none";
+  }
+}
+  
+  function prikaziAdmin() {
+  
+    document.getElementById("administracija").style.display ="block";
+    document.getElementById("aplikacije").style.display ="none";
+    document.getElementById("sifranti").style.display ="none";
+    document.getElementById("avtorizacije").style.display ="none";
+    document.getElementById("domov").style.display ="none";
+    document.getElementById("IT").style.display ="none";
+  document.getElementById("IT2").style.display ="none";
+  document.getElementById("domov2").style.display ="none";
+  document.getElementById("IT3").style.display ="none";
+  document.getElementById("IT4").style.display ="none";
+  document.getElementById("admin").style.display ="block";
+  document.getElementById("app").style.display ="none";
+  document.getElementById("sifrant").style.display ="none";
+  document.getElementById("auth").style.display ="none";
+  document.getElementById("animatedText").style.display ="none";
+  document.getElementById("animatedText2").style.display ="none";
+  document.getElementById("animatedText3").style.display ="block";
+  document.getElementById("animatedText4").style.display ="none";
+  document.getElementById("animatedText5").style.display ="none";
+
+
+
+  }
+  function prikaziApp() {
+  
+    document.getElementById("administracija").style.display ="none";
+    document.getElementById("aplikacije").style.display ="block";
+    document.getElementById("sifranti").style.display ="none";
+    document.getElementById("avtorizacije").style.display ="none";
+    document.getElementById("domov").style.display ="none";
+    document.getElementById("IT").style.display ="none";
+  document.getElementById("IT2").style.display ="none";
+  document.getElementById("domov2").style.display ="none";
+  document.getElementById("IT3").style.display ="none";
+  document.getElementById("IT4").style.display ="none";
+  document.getElementById("admin").style.display ="none";
+  document.getElementById("app").style.display ="block";
+  document.getElementById("sifrant").style.display ="none";
+  document.getElementById("auth").style.display ="none";
+  document.getElementById("animatedText").style.display ="none";
+  document.getElementById("animatedText2").style.display ="none";
+  document.getElementById("animatedText3").style.display ="none";
+  document.getElementById("animatedText4").style.display ="block";
+  document.getElementById("animatedText5").style.display ="none";
+
+}   function prikaziSifranti() {
+  
+  document.getElementById("administracija").style.display ="none";
+    document.getElementById("aplikacije").style.display ="none";
+    document.getElementById("sifranti").style.display ="block";
+    document.getElementById("avtorizacije").style.display ="none";
+    document.getElementById("domov").style.display ="none";
+    document.getElementById("IT").style.display ="none";
+  document.getElementById("IT2").style.display ="none";
+  document.getElementById("domov2").style.display ="none";
+  document.getElementById("IT3").style.display ="none";
+  document.getElementById("IT4").style.display ="none";
+  document.getElementById("admin").style.display ="none";
+  document.getElementById("app").style.display ="none";
+  document.getElementById("sifrant").style.display ="block";
+  document.getElementById("auth").style.display ="none";
+  document.getElementById("animatedText").style.display ="none";
+  document.getElementById("animatedText2").style.display ="none";
+  document.getElementById("animatedText3").style.display ="none";
+  document.getElementById("animatedText4").style.display ="none";
+  document.getElementById("animatedText5").style.display ="block";
+}   function prikaziAvtorizacije() {
+  
+  document.getElementById("administracija").style.display ="none";
+    document.getElementById("aplikacije").style.display ="none";
+    document.getElementById("sifranti").style.display ="none";
+    document.getElementById("avtorizacije").style.display ="block";
+    document.getElementById("domov").style.display ="none";
+    document.getElementById("IT").style.display ="none";
+  document.getElementById("IT2").style.display ="none";
+  document.getElementById("domov2").style.display ="none";
+  document.getElementById("IT3").style.display ="none";
+  document.getElementById("IT4").style.display ="none";
+  document.getElementById("admin").style.display ="none";
+  document.getElementById("app").style.display ="none";
+  document.getElementById("sifrant").style.display ="none";
+  document.getElementById("auth").style.display ="block";
+  document.getElementById("animatedText").style.display ="none";
+  document.getElementById("animatedText2").style.display ="block";
+  document.getElementById("animatedText3").style.display ="none";
+  document.getElementById("animatedText4").style.display ="none";
+  document.getElementById("animatedText5").style.display ="none";
+
+
+} 
+function prikaziDomov() {
+  
+  document.getElementById("administracija").style.display ="none";
+  document.getElementById("aplikacije").style.display ="none";
+  document.getElementById("sifranti").style.display ="none";
+  document.getElementById("avtorizacije").style.display ="none";
+  document.getElementById("domov").style.display ="block";
+  document.getElementById("IT").style.display ="block";
+  document.getElementById("IT2").style.display ="block";
+  document.getElementById("domov2").style.display ="none";
+  document.getElementById("IT3").style.display ="none";
+  document.getElementById("IT4").style.display ="none";
+  document.getElementById("admin").style.display ="none";
+  document.getElementById("app").style.display ="none";
+  document.getElementById("sifrant").style.display ="none";
+  document.getElementById("auth").style.display ="none";
+  document.getElementById("animatedText").style.display ="block";
+  document.getElementById("animatedText3").style.display ="none";
+}
+</script>
+
+</head>
+<style>
+   #animatedText {
+            font-size: 125px;
+         display:block;
+            font-weight: bold;
+       
+            color: silver;
+            /* Initial color */
+            text-align: center;
+            margin-top:-150px;
+            p::first-letter
+            {
+               color:green;
+
+
+            }
+
+            p
+            {
+              color:blue;
+          }
+           
+   }
+  
+
+        #animatedText2 {
+            font-size: 125px;
+            display:none;
+            font-weight: bold;
+            color: silver;
+            /* Initial color */
+            text-align: center;
+            margin-top:-150px;
+            p::first-letter
+            {
+               color:gold;
+
+
+            }
+
+            p
+            {
+              color:blue;
+          }
+           
+        }
+
+        #animatedText3 {
+            font-size: 125px;
+            display:none;
+            font-weight: bold;
+            color: silver;
+            /* Initial color */
+            text-align: center;
+            margin-top:-150px;
+            p::first-letter
+            {
+               color:gold;
+
+
+            }
+
+            p
+            {
+              color:blue;
+          }
+           
+        }
+        #animatedText4 {
+            font-size: 125px;
+            display:none;
+            font-weight: bold;
+            color: silver;
+            /* Initial color */
+            text-align: center;
+            margin-top:-150px;
+            p::first-letter
+            {
+               color:gold;
+
+
+            }
+
+            p
+            {
+              color:blue;
+          }
+           
+        }
+        #animatedText5 {
+            font-size: 125px;
+            display:none;
+            font-weight: bold;
+            color: silver;
+            /* Initial color */
+            text-align: center;
+            margin-top:-150px;
+            p::first-letter
+            {
+               color:gold;
+
+
+            }
+
+            p
+            {
+              color:blue;
+          }
+           
+        }
+table, th, td {
+  border:2px solid black;
+  margin-top: 90px;
+  width:auto;
+  height: auto;
+  ;
+}
+
+th
+{
+  color:red;
+  background-color:silver;
+}
+tr
+{
+  color:white;
+  background-color: blue;
+}
+
+#info img
+{
+  margin-top: 90px;
+  height:250px;
+  margin-left: 5px;
+  width: 350px;
+  
+  
+ 
+}
+#IT
+{
+  width: 50%;
+  display:none;
+  
+}
+#IT2
+{
+  width: 50%;
+  margin-left: 800px;
+  margin-top: -600px;
+  display:none;
+}
+
+#IT3
+{
+  width: 50%;
+  display:block;
+  
+}
+#IT4
+{
+  width: 50%;
+  margin-left: 800px;
+  margin-top: -600px;
+  display:block;
+}
+.gumb
+{
+  background-color: yellow;
+  border-radius: 50%;
+  font-size: 25px;
+ 
+}
+.gumb:hover {
+  background-color: white;
+  color: black;
+  
+}
+.center {
+  margin: 0;
+  position: fixed;
+  top: 4%;
+  left: 97%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+ 
+}
+
+.sidenav
+{
+
+ width: 250px;
+ position:fixed;
+ background-color: yellow;
+ color: white;
+ margin-top: 25px;
+ height:100%;
+ overflow-x: hidden;
+ z-index: 1;
+ top: 0;
+ left: 0;
+ padding-top: 20px;
+ display:none;
+
+}
+.sidenav a 
+{
+   
+    padding: 8px 8px 8px 32px;
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+   
+
+
+}
+
+#info
+{
+  margin-left: 1119px;
+  border: solid black;
+  height: 850px;
+  width:25%;
+
+}
+.sidenav a:hover {
+  color: red;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 5;
+  right: 7px;
+  font-size: 46px;
+  margin-left: 70px;
+  margin-top:-25px;
+}
+
+.topnav
+{
+  overflow: hidden;
+  background-color: black;
+  height: 50px;
+  position: relative;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 10px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.topnav p
+{
+  color:white;
+  text-align: right;
+  margin-right: 80px;
+}
+span
+{
+  margin-top: 20px;
+}
+#info #prvi
+{
+  color:green;
+  font-weight: bold;
+  display:inline;
+  margin-top:30px;
+  position: relative;
+  text-align:start;
+  font-size: 20px;
+  
+}
+#info #drugi
+{
+  color:red;
+  font-weight: bold;
+ margin-top:60px;
+ font-size: 20px;
+  position: relative;
+}
+
+#info #tretji
+{
+  color:blue;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top:60px;
+  margin-right: 120px;
+  text-align: left;
+}
+#administracija
+{
+  color:black;
+  display:none;
+  font-weight: bold;
+}
+
+#aplikacije
+{
+  color:black;
+  display:none;
+  font-weight: bold;
+}
+
+#sifranti
+{
+  color:black;
+  display:none;
+  font-weight: bold;
+}
+
+#avtorizacije
+{
+  color:black;
+  display:none;
+  font-weight: bold;
+}
+#domov
+{
+  color:black;
+  display:none;
+  font-weight: bold;
+  text-align: center;
+}
+#domov2
+{
+  color:black;
+  display:block;
+  font-weight: bold;
+  text-align: center;
+}
+#admin
+{
+  color:black;
+  display:none;
+  font-weight: bold;
+  text-align: center;
+}
+#app
+{
+  color:black;
+  display:none;
+  font-weight: bold;
+  text-align: center;
+}
+
+#sifrant
+{
+  color:black;
+  display:none;
+  font-weight: bold;
+  text-align: center;
+}
+#auth
+{
+  color:black;
+  display:none;
+  font-weight: bold;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  padding: 1px;
+  background-color: gold;
+  color: white;
+  bottom: 0;
+}
+/*#novi #searchform
+{
+text-align: center;
+
+
+}*/
+form {
+  background-color: #4654e1;
+  width: 300px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ margin-left: 590px;
+ margin-top: -60px;
+}
+
+
+</style>
+<body style="background-color:powderblue;">
+<div id = "meni" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="#"onclick = "prikaziDomov()">Domov</a>
+  <a href="#" onclick = "prikaziAdmin()">Administracija</a>
+  <a href="#"onclick = "prikaziApp()">Aplikacije</a>
+  <a href="#"onclick = "prikaziSifranti()">Šifranti</a>
+  <a href="#"onclick = "prikaziAvtorizacije()">Avtorizacije</a>
+
+</div>
+
+
+<div class="topnav">
+  
+ <p>Aleš Jeromel</p>
+ <div class="center">
+  <button class = "gumb" onclick="prikaziInfo()">A.J.</button>
+</div>
+</div>
+ 
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Levi meni</span>
+<div id="info" style="display:none";>
+  <p id = "prvi">Ime in priimek: Aleš Jeromel</p>
+  <p id = "drugi">Letnica rojstva: 10.2.1994</p>
+  <p id = "tretji">Vrsta uporabnika: Admin</p>
+  <img src="https://t3.ftcdn.net/jpg/02/66/10/90/360_F_266109081_22a0UNlYqLGh3vin77zsPlpINnHC6Bgy.jpg" alt="Girl in a jacket" width="100" height="100">
+  <table style="width:100%">
+    <tr>
+      <th>Ime in priimek</th>
+      <th>letnica rojstva</th>
+      <th>vrsta </th>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>1.8.1990</td>
+      <td>User</td>
+    </tr>
+    <tr>
+      <td>Janez Novak</td>
+      <td>2.9.1995</td>
+      <td>Visitor</td>
+    </tr>
+    <tr>
+      <td>Bill Gates</td>
+      <td>2.9.1954</td>
+      <td>Superuser</td>
+    </tr>
+    <tr>
+      <td>Elon Musk</td>
+      <td>2.9.1974</td>
+      <td>Visitor</td>
+    </tr>
+    <tr>
+      <td>Andrew Tate</td>
+      <td>2.9.1986</td>
+      <td>User</td>
+    </tr>
+  </table>
+</div>
+
+
+<div id="animatedText">
+ <p id = "glavna">Glavna stran</p> 
+
+
+</div>
+<div id="animatedText2">
+  <p id = "avt">Avtorizacije</p> 
+ 
+ 
+ </div>
+ <div id="animatedText3">
+  <p id = "adm">Administracija</p> 
+ 
+ 
+ </div>
+ <div id="animatedText4">
+  <p id = "apps">Aplikacije</p> 
+ 
+ 
+ </div>
+ <div id="animatedText5">
+  <p id = "šif">Šifranti</p> 
+ 
+ 
+ </div>
+<script>
+//const animatedText = document.getElementById('animatedText');
+const animatedText = document.querySelector("#animatedText p");
+let colorIndex = 0;
+
+function changeColor() {
+    const colors = ['red', 'green', 'blue', 'orange']; // Add more colors as needed
+    animatedText.style.color = colors[colorIndex];
+    colorIndex = (colorIndex + 1) % colors.length;
+}
+
+// Change text color every 1000 milliseconds (1 second)
+setInterval(changeColor, 1000);
+</script>
+<script>
+  //const animatedText = document.getElementById('animatedText');
+  const animatedText2 = document.querySelector("#animatedText2 p");
+  let colorIndex2 = 0;
+  
+  function changeColor() {
+      const colors = ['red', 'green', 'blue', 'orange']; // Add more colors as needed
+      animatedText2.style.color = colors[colorIndex];
+      colorIndex2 = (colorIndex2 + 1) % colors.length;
+  }
+  
+  // Change text color every 1000 milliseconds (1 second)
+  setInterval(changeColor, 1000);
+  </script>
+ <script>
+  //const animatedText = document.getElementById('animatedText');
+  const animatedText3 = document.querySelector("#animatedText3 p");
+  let colorIndex3 = 0;
+  
+  function changeColor() {
+      const colors = ['red', 'green', 'blue', 'orange']; // Add more colors as needed
+      animatedText3.style.color = colors[colorIndex];
+      colorIndex3 = (colorIndex3 + 1) % colors.length;
+  }
+  
+  // Change text color every 1000 milliseconds (1 second)
+  setInterval(changeColor, 1000);
+  </script>
+  
+  <script>
+    //const animatedText = document.getElementById('animatedText');
+    const animatedText4 = document.querySelector("#animatedText4 p");
+    let colorIndex4 = 0;
+    
+    function changeColor() {
+        const colors = ['red', 'green', 'blue', 'orange']; // Add more colors as needed
+        animatedText4.style.color = colors[colorIndex];
+        colorIndex4 = (colorIndex4 + 1) % colors.length;
+    }
+    
+    // Change text color every 1000 milliseconds (1 second)
+    setInterval(changeColor, 1000);
+    </script>
+    <script>
+      //const animatedText = document.getElementById('animatedText');
+      const animatedText5 = document.querySelector("#animatedText5 p");
+      let colorIndex5 = 0;
+      
+      function changeColor() {
+          const colors = ['red', 'green', 'blue', 'orange']; // Add more colors as needed
+          animatedText5.style.color = colors[colorIndex];
+          colorIndex5 = (colorIndex5 + 1) % colors.length;
+      }
+      
+      // Change text color every 1000 milliseconds (1 second)
+      setInterval(changeColor, 1000);
+      </script>
+      
+
+<!--<div id = "novi">
+  <form id="searchform" class="search2" method="get" action="source.html" />
+  <input class="search2" id="test" type="text" name="search" size="10" maxlength="255"/>
+</div>-->
+<form id="form" role="search">
+  <input type="search" id="query" name="q"
+   placeholder="Search..."
+   aria-label="Search through site content">
+  <button>Search</button>
+</form>
+
+<p id = "domov2">Dobrodošli na spletni strani!
+  Tukaj imate administratorski pogled in dostop do vsebine.
+</p>
+<p id = "domov">Dobrodošli na spletni strani!
+  Tukaj imate administratorski pogled in dostop do vsebine.
+</p>
+<p id = "administracija">Admin User Role #3: Admin
+  Admin is the role with the highest level of access to your website. Admins can add content on all pages and access all items in the Admin Toolbar. This means that Admins can control site-wide settings like the design of your website and the homepage layout. They can add and delete other admin users, and can approve or deny edits made by authors.
+  Add Content - Yes, to all pages
+  Publish Content - Yes, on all pages
+  Add New Pages - Yes, without restriction
+  Edit Site Design - Yes, full access to the Design Studio
+  Edit Site Settings - Yes, full access to Admin Settings</p>
+<p id = "aplikacije">Microsoft 365 is the ultimate everyday productivity app that helps you quickly find and edit files, scan documents, and create content on the go. With Microsoft Copilot, Word, Excel, PowerPoint, and PDFs all in one app, Microsoft 365 is the destination for finding, creating, editing, and sharing documents on the fly when you need them most.
+
+  With your everyday AI companion, Copilot, integrated into the Microsoft 365 app, you can boost your productivity through search, chat, and image generation, powered by the latest OpenAI models, GPT-4 and DALL·E 3. Your Copilot outputs can easily be exported to Word</p>
+<p id = "sifranti">The recommended way to manage new user account setups in Acquia DAM is with registration codes. Registration codes make the administrative process of managing users more efficient and are a measure of security for your DAM site. If someone registering for the site doesn't enter a correct code, they will remain a pending user. As a best practice, if you expect new site users on a daily or even weekly basis, registration codes not only allow them to access the site faster but also reduce administrative duties.
+ 
+
+  Create registration codes
+  To create registration codes:
+  
+  Go to the Admin app.
+  Click Registration codes under User Settings in the left navigation.
+  Click Create registration code.
+  Complete the registration code information. Note, the registration code is the Display Name.
+  Click Create.
+  On the Edit Registration Code Permissions page, select the roles to assign users when the code is used.
+  Click Update.
+   
+  
+  Set default codes
+  The DAM uses the default or SAML default registration code if new users don't specify one. If there's not at least one role assigned to the default registration codes, new account requests tied to the codes will not display in the Pending Registration Requests queue on the Admin dashboard.
+   
+  
+  Announce the DAM
+  After it's been created, you can send users an email to introduce the DAM and provide the registration code for them to use to access the site. Here's some sample text you could use and modify: 
+  
+  SUBJECT: Introducing <name of your site>
+  
+  Dear <user name>,
+  
+  Our organization is launching a digital asset management system to make it quick and easy to search for, download, and share the company files you need.
+  
+  You have been given access to the site, and can access it at <URL to the site>. The first time you access the site, you’ll need to create an account by following these steps:
+   
+  
+  Click the Create Account button.
+  Complete the registration form by entering the registration code provided, along with all other required fields.
+  Use this registration code: <Indicate registration code here>
+  Click Submit.
+  
+  To log into the site, enter the email address and password you indicated on the registration form on the login page. Use this sentence and delete the previous sentence if you are not using auto approvals: Your request will be sent to a queue monitored by DAM admins. Once approved, you'll receive an email and will be able to log in.
+  
+  Contact <insert your contact information> with any questions.
+  
+  This tutorial will teach you JavaScript from basic to advanced.</p>
+<p id = "avtorizacije">Authorization or authorisation (see spelling differences) is the function of specifying access rights/privileges to resources, which is related to general information security and computer security, and to access control in particular.[1] More formally, "to authorize" is to define an access policy. For example, human resources staff are normally authorized to access employee records and this policy is often formalized as access control rules in a computer system. During operation, the system uses the access control rules to decide whether access requests from (authenticated) consumers shall be approved (granted) or disapproved (rejected).[2] Resources include individual files or an item's data, computer programs, computer devices and functionality provided by computer applications. Examples of consumers are computer users, computer software and other hardware on the computer.</p>
+
+<img id = "IT" src="https://erkqdopz7j5.exactdn.com/wp-content/uploads/sites/2/2018/12/AI-is-coming-%E2%80%94-and-HR-is-not-prepared.jpg?strip=all&lossy=1&ssl=1" alt="Girl in a jacket" width="500" height="600">
+<img id = "IT2" src="https://www.cisco.com/c/dam/assets/swa/img/anchor-info/what-is-it-anchor-628x353.png" alt="Girl in a jacket" width="500" height="600">
+
+<img id = "IT3" src="https://erkqdopz7j5.exactdn.com/wp-content/uploads/sites/2/2018/12/AI-is-coming-%E2%80%94-and-HR-is-not-prepared.jpg?strip=all&lossy=1&ssl=1" alt="Girl in a jacket" width="500" height="600">
+<img id = "IT4" src="https://www.cisco.com/c/dam/assets/swa/img/anchor-info/what-is-it-anchor-628x353.png" alt="Girl in a jacket" width="500" height="600">
+<img id = "admin" src="https://www.epo.org/sites/default/files/2023-02/Administration_1200x400px.jpg" alt="Girl in a jacket" width="1200" height="800">
+<img id = "app" src="https://as2.ftcdn.net/v2/jpg/04/71/09/85/1000_F_471098514_xczGJRMxCbPEcXuwKt9ytr36d2EV8JyI.jpg" alt="Girl in a jacket" width="1200" height="800">
+<img id = "sifrant" src="https://developer.okta.com/img/saml/saml_guidance_saml_flow.png" alt="Girl in a jacket" width="1200" height="800">
+<img id = "auth" src="https://miro.medium.com/v2/resize:fit:413/0*nrG185aDIksAga3W.jpg" alt="Girl in a jacket" width="1200" height="800">
+</body>
+<footer>
+  <p>Author: Aleš Jeromel<br>
+  <a href="mailto:ales.jeromel@gmail.com">ales.jeromel@gmail.com</a></p>
+  
+
+  
+</footer>
+
+</html>
